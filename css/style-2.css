@@ -71,15 +71,14 @@ section.content-right {
   letter-spacing: 0.02rem;
 }
 
-.venue {
+/* .venue {
   display: flex;
   gap: 0.2rem;
   color: #9fb1e8;
   color: #162a67;
-  -webkit-text-fill-color: var(--yl);
+  -webkit-text-fill-color: var(--db);
   -webkit-text-stroke: 0.1px;
-  /* color: var(--yl);
-  text-shadow: 1px 1px 2px var(--db), -1px -1px 2px var(--db); */
+  text-shadow: 1px 1px 2px var(--db), -1px -1px 2px var(--db);
   letter-spacing: 0.05rem;
   font-size: calc(1.7 * var(--fontBasis));
   line-height: calc(2.3 * var(--fontBasis));
@@ -87,7 +86,22 @@ section.content-right {
   -webkit-text-stroke: calc(0.04 * var(--fontBasis));
   font-size: calc(2.2 * var(--fontBasis));
   text-align: right;
-  /* -webkit-text-stroke: 0.08px #4664a0; */
+}
+*/
+
+.venue {
+  display: flex;
+  gap: 0.2rem;
+  color: var(--db);
+  -webkit-text-fill-color: var(--db);
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+  filter: none;
+  font-family: "Arimo", sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: calc(2.2 * var(--fontBasis));
+  line-height: calc(2.3 * var(--fontBasis));
+  text-align: right;
 }
 
 .venue.big-outline {
@@ -253,47 +267,47 @@ section.content-right {
 
 .Layer1 {
   text-shadow:
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f,
-    0 0 15px #ff4c5f;
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133,
+    0 0 15px #ca2133;
   text-shadow:
-    -1px -1px 15px #ff4c5f,
-    -1px 1px 15px #ff4c5f,
-    1px -1px 15px #ff4c5f,
-    1px 1px 15px #ff4c5f,
-    -1px -1px 15px #ff4c5f,
-    -1px 1px 15px #ff4c5f,
-    1px -1px 15px #ff4c5f,
-    1px 1px 15px #ff4c5f,
-    -1px -1px 15px #ff4c5f,
-    -1px 1px 15px #ff4c5f,
-    1px -1px 15px #ff4c5f,
-    1px 1px 15px #ff4c5f,
-    -1px -1px 15px #ff4c5f,
-    -1px 1px 15px #ff4c5f,
-    1px -1px 15px #ff4c5f,
-    1px 1px 15px #ff4c5f,
-    -1px -1px 15px #ff4c5f,
-    -1px 1px 15px #ff4c5f,
-    1px -1px 15px #ff4c5f,
-    1px 1px 15px #ff4c5f,
-    -1px -1px 15px #ff4c5f,
-    -1px 1px 15px #ff4c5f,
-    1px -1px 15px #ff4c5f,
-    1px 1px 15px #ff4c5f;
+    -1px -1px 15px #ca2133,
+    -1px 1px 15px #ca2133,
+    1px -1px 15px #ca2133,
+    1px 1px 15px #ca2133,
+    -1px -1px 15px #ca2133,
+    -1px 1px 15px #ca2133,
+    1px -1px 15px #ca2133,
+    1px 1px 15px #ca2133,
+    -1px -1px 15px #ca2133,
+    -1px 1px 15px #ca2133,
+    1px -1px 15px #ca2133,
+    1px 1px 15px #ca2133,
+    -1px -1px 15px #ca2133,
+    -1px 1px 15px #ca2133,
+    1px -1px 15px #ca2133,
+    1px 1px 15px #ca2133,
+    -1px -1px 15px #ca2133,
+    -1px 1px 15px #ca2133,
+    1px -1px 15px #ca2133,
+    1px 1px 15px #ca2133,
+    -1px -1px 15px #ca2133,
+    -1px 1px 15px #ca2133,
+    1px -1px 15px #ca2133,
+    1px 1px 15px #ca2133;
 }
 
 .Layer2 {
