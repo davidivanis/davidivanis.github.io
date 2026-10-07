@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "FT88";
+  src: url("/fonts/FT88-Gothique.ttf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad";
+  src: url("/fonts/Myriad.ttf") format("opentype");
+  font-weight: 100;
+}
+
+.main-content-2 {
+  container-type: inline-size;
+  position: relative;
+  padding-top: 6rem;
+  padding-right: 4.5rem;
+  padding-bottom: 4.5rem;
+  width: 800px;
+  max-width: 65%;
+  height: 100dvh;
+  z-index: 3;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.main-content-2.main-logo {
+  width: 1200px;
+  max-width: 70%;
+  height: 100dvh;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 3fr));
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1rem;
+}
+
+.logo-grid > div {
+  background: transparent;
+  padding: 1rem;
+  display: grid;
+}
+
+.logo-grid > div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.logo-grid > div > img {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ::selection {
+  background-color: var(--yl);
+} */
+
+.curatorial-text,
+.impressum {
+  font-family: "Arimo", sans-serif;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.quote-text {
+  margin-bottom: 3rem;
+}
+
+.quoting {
+  font-family: "FT88", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 0.93;
+  padding-bottom: 0.6rem;
+}
+
+.sub-section {
+  font-family: "FT88", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: "FT88", sans-serif;
+  font-size: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+h4 {
+  font-weight: normal;
+  font-family: "FT88", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+
+.float-right {
+  float: right;
+  max-width: 40%;
+  display: none;
+}
+
+.float-left {
+  float: left;
+  max-width: 40%;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .logo-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .main-content-2 {
+    width: 80%;
+    max-width: 80%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10rem;
+  }
+
+  .float-left,
+  .float-right {
+    display: block;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .sub-section {
+    font-size: 3.5rem;
+  }
+
+  .quoting {
+    font-size: 1.8rem;
+    line-height: 0.96;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
