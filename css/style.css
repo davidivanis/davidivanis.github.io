@@ -649,3 +649,10 @@ body:has(.locations.show) .content {
     text-transform: uppercase;
   }
 }
+
+.event-link.readable .title {
+  font-family: "FT88-regular", sans-serif;
+  font-size: calc(3 * var(--fontBasis));
+  line-height: 1.05;
+  text-transform: uppercase;
+}
