@@ -83,6 +83,18 @@ header h1.site-title {
   display: block;
 }
 
+header h1.site-title {
+  line-height: 0;
+  min-width: 0;
+}
+
+.site-logo {
+  width: 15rem;
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+
 .navbar a {
   font-size: 1.6rem;
   font-weight: 100;
