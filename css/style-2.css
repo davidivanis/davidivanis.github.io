@@ -80,6 +80,7 @@ section.content-right {
   text-shadow: none;
   filter: none;
   font-family: "GFS Didot", sans-serif;
+  font-family: "FT88-regular", serif;
   letter-spacing: 0.05rem;
   font-size: calc(2.2 * var(--fontBasis));
   line-height: calc(2.3 * var(--fontBasis));
@@ -417,7 +418,7 @@ section.content-right {
 
   .event-subtablet .pin {
     vertical-align: -0.3em;
-    margin-right: 0em;
+    margin-right: -0.4em;
   }
 
   .upper-left {
@@ -451,7 +452,7 @@ section.content-right {
   }
 
   .event .venue {
-    font-size: calc(2.1 * var(--fontBasis));
+    font-size: calc(2 * var(--fontBasis));
     /* color: var(--yl);
     text-shadow: 1px 1px 2px var(--db), -1px -1px 2px var(--db); */
   }
@@ -612,7 +613,7 @@ section.content-right {
   }
 
   .event .venue {
-    font-size: calc(1.9 * var(--fontBasis));
+    font-size: calc(1.8 * var(--fontBasis));
   }
 
   .event .author {
