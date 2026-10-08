@@ -139,3 +139,26 @@ window.matchMedia("(min-width: 901px)").addEventListener("change", (e) => {
     socials.classList.remove("open");
   }
 });
+
+// Phones: first tap changes font, second tap opens the page
+const isTouch = window.matchMedia("(hover: none)");
+
+document.querySelectorAll(".event-link").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    if (!isTouch.matches) return; // computers: open the link normally
+    if (link.classList.contains("readable")) return; // second tap: open the link
+
+    e.preventDefault(); // first tap: don't open yet
+    document
+      .querySelectorAll(".event-link.readable")
+      .forEach((other) => other.classList.remove("readable"));
+    link.classList.add("readable");
+  });
+});
+
+// Reset when coming back
+window.addEventListener("pageshow", () => {
+  document
+    .querySelectorAll(".event-link.readable")
+    .forEach((l) => l.classList.remove("readable"));
+});

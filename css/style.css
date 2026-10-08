@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "FT88-regular";
+  src: url("/fonts/FT88-Regular.ttf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Myriad";
   src: url("/fonts/Myriad.ttf") format("opentype");
   font-weight: 100;
@@ -353,7 +360,6 @@ main {
 .event .author {
   font-size: calc(1.87 * var(--fontBasis));
   font-family: "GFS Didot", serif;
-  font-family: "Arimo", serif;
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 0;
@@ -632,5 +638,14 @@ body:has(.locations.show) .content {
   body:has(.navbar.open) .center,
   body:has(.navbar.open) .content {
     opacity: 0;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .event-link:hover .title {
+    font-family: "FT88-regular", sans-serif;
+    font-size: calc(3 * var(--fontBasis));
+    line-height: 0.8;
+    text-transform: uppercase;
   }
 }

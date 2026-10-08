@@ -36,7 +36,7 @@
 .logo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 3fr));
-  grid-template-columns: repeat(7, 1fr);
+  gtitlerid-template-columns: repeat(7, 1fr);
   grid-gap: 1rem;
 }
 
@@ -67,6 +67,7 @@
 .curatorial-text,
 .impressum {
   font-family: "Arimo", sans-serif;
+  font-family: "GFS Didot", serif;
 }
 
 .bold-text {

@@ -97,7 +97,7 @@ section.content-right {
   -webkit-text-stroke: 0;
   text-shadow: none;
   filter: none;
-  font-family: "Arimo", sans-serif;
+  font-family: "GFS Didot", sans-serif;
   letter-spacing: 0.05rem;
   font-size: calc(2.2 * var(--fontBasis));
   line-height: calc(2.3 * var(--fontBasis));
@@ -184,6 +184,7 @@ section.content-right {
 
   font-size: 16px;
   font-family: "Myriad", sans-serif;
+  font-family: "GFS Didot", serif;
   letter-spacing: 0.03rem;
 
   padding: 0.7rem;
@@ -239,7 +240,6 @@ section.content-right {
   font-size: 17px;
   line-height: 22px;
   font-family: "GFS Didot", serif;
-  font-family: "Arimo", sans-serif;
 }
 
 .author-info,
@@ -341,7 +341,7 @@ section.content-right {
   line-height: 22px;
   font-family: "GFS Didot", serif;
   font-family: "Myriad", sans-serif;
-  font-family: "Arimo", sans-serif;
+  font-family: "GFS Didot", serif;
   opacity: 1;
   color: #ff4c5f;
   -webkit-text-stroke: 20px #ff4c5f;
