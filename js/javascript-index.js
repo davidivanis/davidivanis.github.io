@@ -79,6 +79,14 @@ locationsMenu.addEventListener("click", () => {
   locations.classList.toggle("show");
 });
 
+document.addEventListener("click", (e) => {
+  if (!locations.classList.contains("show")) return;
+  if (e.target.closest(".locations a") || e.target.closest(".locations-menu")) {
+    return;
+  }
+  locations.classList.remove("show");
+});
+
 // locationsMenu.addEventListener("mouseenter", () => {
 //   locations.classList.add("show");
 // });
@@ -120,4 +128,14 @@ document.querySelectorAll(".credits").forEach((btn) => {
       content.classList.toggle("show");
     });
   });
+});
+
+window.matchMedia("(min-width: 901px)").addEventListener("change", (e) => {
+  if (e.matches) {
+    menuToggleButton.classList.remove("open");
+    navbar.classList.remove("open");
+    navbarLinks.classList.remove("open");
+    header.classList.remove("open");
+    socials.classList.remove("open");
+  }
 });
