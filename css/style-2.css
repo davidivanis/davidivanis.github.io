@@ -230,6 +230,11 @@ section.content-right {
   margin-top: -10dvh;
 }
 
+.signature {
+  display: block;
+  text-align: right;
+}
+
 .info-text p {
   font-size: 17px;
   line-height: 22px;

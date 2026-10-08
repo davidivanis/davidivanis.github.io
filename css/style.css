@@ -58,8 +58,8 @@ body {
 
 header {
   position: fixed;
-  padding-top: 3.75rem; /*60px*/
-  padding-left: 2rem;
+  padding-top: 1.75rem; /*60px*/
+  padding-left: 0.8rem;
   width: 100%;
   min-height: 200px;
   z-index: 2;
@@ -73,10 +73,20 @@ header h1 {
   line-height: 0.5em;
 }
 
+header h1.site-title {
+  line-height: 0;
+}
+
+.site-logo {
+  height: 5.5rem;
+  width: auto;
+  display: block;
+}
+
 .navbar a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 100;
-  line-height: 2.3rem;
+  line-height: 2.1rem;
   letter-spacing: 0;
   white-space: nowrap;
 }
@@ -84,7 +94,7 @@ header h1 {
 .navbar {
   display: flex;
   flex-direction: row;
-  margin-top: 0.8em;
+  margin-top: 2em;
 }
 
 .menu {
@@ -248,9 +258,9 @@ main {
   position: absolute;
   right: 0;
   bottom: 0;
-  transform: translateY(10%);
+  transform: translateY(1%);
   z-index: 100;
-  width: min(23vw, 70dvh);
+  width: min(20vw, 35dvh);
   height: auto;
   display: block;
 }
@@ -265,7 +275,7 @@ main {
 }
 
 .after img {
-  width: min(80%, 60dvh);
+  width: min(70%, 50dvh);
   height: auto;
   display: none;
   position: sticky;
@@ -276,8 +286,8 @@ main {
 .main-content-2 {
   container-type: inline-size;
   position: relative;
-  padding-top: 4.5rem;
-  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-right: 1rem;
   width: 27vw;
   height: 100dvh;
   z-index: 3;
@@ -302,7 +312,13 @@ main {
   font-size: 11cqw;
   font-weight: 100;
   line-height: 1;
-  padding-bottom: 35dvh;
+  padding-bottom: 10dvh;
+}
+
+.quote-img {
+  width: 90%;
+  height: auto;
+  display: block;
 }
 
 .event {
@@ -316,7 +332,7 @@ main {
 
 .event .date {
   font-weight: bold;
-  font-size: calc(1.75 * var(--fontBasis));
+  font-size: calc(1.7 * var(--fontBasis));
   font-weight: 100;
   /* line-height: calc(2.5 * var(--fontBasis)); */
   padding-bottom: calc(0.2 * var(--fontBasis));
@@ -324,18 +340,18 @@ main {
 }
 
 .event .author {
-  font-size: calc(1.97 * var(--fontBasis));
+  font-size: calc(1.87 * var(--fontBasis));
   font-family: "GFS Didot", serif;
   font-family: "Arimo", serif;
   text-transform: uppercase;
-  line-height: 1.1;
+  line-height: 1;
   margin-bottom: 0;
 }
 
 .event .title {
   margin-top: -0.2rem;
-  font-size: calc(3.5 * var(--fontBasis));
-  line-height: 0.7;
+  font-size: calc(3 * var(--fontBasis));
+  line-height: 0.85;
 }
 
 #backToTopButton {
