@@ -441,6 +441,10 @@ footer {
     justify-content: center;
   }
 
+  .nowrap {
+    white-space: nowrap;
+  }
+
   .title-and-toggle {
     display: flex;
     flex-direction: row;

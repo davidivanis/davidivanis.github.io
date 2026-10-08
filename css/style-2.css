@@ -509,7 +509,7 @@ section.content-right {
   }
 
   .event .title {
-    font-size: calc(4.7 * var(--fontBasis));
+    font-size: calc(4.4 * var(--fontBasis));
   }
 
   .upper-right .date,
@@ -536,7 +536,7 @@ section.content-right {
   }
 
   .event .title {
-    font-size: calc(4.7 * var(--fontBasis));
+    font-size: calc(4.5 * var(--fontBasis));
   }
 
   section.content-right {
@@ -599,7 +599,7 @@ section.content-right {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .event .date {
     font-size: calc(1.9 * var(--fontBasis));
   }
@@ -612,6 +612,10 @@ section.content-right {
     font-size: calc(1.9 * var(--fontBasis));
   }
 
+  .event .pin {
+    height: calc(2 * var(--fontBasis));
+  }
+
   .event .venue {
     font-size: calc(1.8 * var(--fontBasis));
   }
@@ -622,6 +626,36 @@ section.content-right {
 
   .event .title {
     font-size: calc(3.5 * var(--fontBasis));
+  }
+}
+
+@media (max-width: 450px) {
+  .event .date {
+    font-size: calc(1.7 * var(--fontBasis));
+  }
+
+  .event .time {
+    font-size: calc(1.5 * var(--fontBasis));
+  }
+
+  .event .type {
+    font-size: calc(1.7 * var(--fontBasis));
+  }
+
+  .event .pin {
+    height: calc(1.8 * var(--fontBasis));
+  }
+
+  .event .venue {
+    font-size: calc(1.7 * var(--fontBasis));
+  }
+
+  .event .author {
+    font-size: calc(2.3 * var(--fontBasis));
+  }
+
+  .event .title {
+    font-size: calc(3.2 * var(--fontBasis));
   }
 }
 
